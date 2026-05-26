@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magical Birthday Surprise ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="main-experience-page">
+    <div class="game-bg-overlay" id="game-bg"></div>
+
+    <div id="countdown-container">
+      <h1>Something Beautiful Is Coming ✨</h1>
+      <div id="countdown">10</div>
+    </div>
+
+    <div id="tree-display-container" class="hidden">
+      <div class="tree-bg-wrapper"></div>
+      <div class="tree-content-overlay" id="dynamic-heart-tree">
+        <div class="girl locked" id="girl-trigger" title="Catch 50 hearts and read the 10 golden secret notes first!"></div>
+      </div>
+    </div>
+    
+    <canvas id="game-canvas" class="hidden"></canvas>
+    <div id="score-board">Catch the Hearts! 💖 Collected: <span id="score">0</span> / 50</div>
+    
+    <div id="ready-box" class="hidden">
+      <h2>Are you ready for what's next?? 💖</h2>
+      <button id="ready-btn">Unlock Grand Surprise</button>
+    </div>
+  </div>
+
+  <div id="love-question-page" class="hidden">
+    <div class="love-box" id="question-card">
+      <h1 class="love-title">Do you love me?? 🥺❤️</h1>
+      <div class="love-buttons">
+        <button id="yes-love-btn">YES! 💖</button>
+        <button id="no-love-btn">No 😢</button>
+      </div>
+    </div>
+
+    <div class="love-box hidden" id="punchline-card">
+      <h1 class="love-title">I knew it, it's nothing new 💅😂😂</h1>
+      <button id="lips-proceed-btn">💋</button>
+    </div>
+  </div>
+
+  <div id="message-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <p id="modal-text">A secret note...</p>
+    </div>
+  </div>
+
+  <div id="wish-page" class="hidden">
+    <div class="center-wish-banner">
+      <h1 class="glow-text">|| Happy Birthday SUBHA❤️ ||</h1>
+      <p>Tap each quadrant to unlock a memory...</p>
+    </div>
+
+    <div class="quadrant-grid">
+      
+      <div class="quad-part part-1 locked" onclick="revealPart(this)">
+        <div class="quad-heading">
+          <h2>❤️</h2>
+          <p class="tap-hint">Tap to unlock...</p>
+        </div>
+        <div class="quad-content hidden">
+          <img src="pic1.jpg.jpg" alt="Memory 1" class="quad-img">
+          <p class="letter-text">FROM NOT LIKING UHH TO LOVING U.....💖</p>
+          <p class="subletter-text">It took u whole 9 yrs to make me fall 😂😂</p>
+        </div>
+      </div>
+
+      <div class="quad-part part-2 locked" onclick="revealPart(this)">
+        <div class="quad-heading">
+          <h2>Moments 😂</h2>
+          <p class="tap-hint">Tap to unlock...</p>
+        </div>
+        <div class="quad-content hidden">
+          <img src="pic2.jpg.png" alt="Memory 2" class="quad-img">
+          <p class="letter-text">Moment??? Which moment bruhh 😂</p>
+          <p class="subletter-text">We just met to eat 😂 or ur darpok harkatein in clg time 😂</p>
+        </div>
+      </div>
+
+      <div class="quad-part part-3 locked" onclick="revealPart(this)">
+        <div class="quad-heading">
+          <h2>Why You're Special 💖</h2>
+          <p class="tap-hint">Tap to unlock...</p>
+        </div>
+        <div class="quad-content hidden">
+          <img src="pic3.jpg.jpg" alt="Memory 3" class="quad-img">
+          <p class="letter-text">Ummmm wanna know???<br>Idk too bruhh 😭</p>
+          <p class="subletter-text">Bas ban gayi tu ese hi aur mujhe pata bhi na chala 💖<br><br>Wese teri murkhata dekh k bhala krne ka vichar aa gaya tha 😉</p>
+        </div>
+      </div>
+
+      <div class="quad-part part-4 locked" onclick="revealPart(this)">
+        <div class="quad-heading">
+          <h2>My Wish For You 🌟</h2>
+          <p class="tap-hint">Tap to unlock...</p>
+        </div>
+        <div class="quad-content hidden">
+          <img src="pic4.jpg.jpg" alt="Memory 4" class="quad-img">
+          <p class="letter-text">May ur year be packed with smiles, love, peace nd endless success 💖✨</p>
+          <p class="subletter-text">May this year bring everything ur heart wishes for 🫶<br><br><span class="final-wish">Happy Birthday 🎂💖</span></p>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
